@@ -2,6 +2,8 @@
 #define COMPLEX_H
 
 class Complex {
+    double re; // Действительная часть
+    double im; // Мнимая часть
 public:
     Complex(); // Конструктор по умолчанию
     Complex(double x, double y); // Конструктор с параметрами
@@ -24,10 +26,6 @@ public:
     Complex Sub(const Complex& z) const;
     Complex Mult(const Complex& z) const;
     Complex Div(const Complex& z) const;
-
-private:
-    double re; // Действительная часть
-    double im; // Мнимая часть
 };
 
 #endif // COMPLEX_H
