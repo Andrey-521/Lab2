@@ -2,11 +2,11 @@
 #define BELL_H
 
 class Bell {
+    bool nextIsDing;
 public:
     Bell();
     void sound(); // печатает "ding" или "dong" по очереди, начиная с "ding"
-private:
-    bool nextIsDing;
+
 };
 
 #endif // BELL_H
